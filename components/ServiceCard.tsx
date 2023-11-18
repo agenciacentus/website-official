@@ -20,7 +20,8 @@ export function ServiceCard(props: ServiceCard) {
       className="flex flex-row items-center justify-center p-4"
     >
       <div className="card max-w-[1000px] bg-base-100 grid md:grid-cols-2 gap-4 flex-row shadow-xl p-8 relative ">
-        <CardHeader>
+        <div className="flex flex-col justify-between gap-4">
+
           <h3 className="text-2xl font-semibold">{props.title}</h3>
           <p className="text-normal">{props.description}</p>
 
@@ -62,24 +63,27 @@ export function ServiceCard(props: ServiceCard) {
               </div>
             </div>
 
-            <div className="w-full flex justify-center">
+            <div className="w-full flex justify-center p-4">
               <Button
                 variant="outline"
                 onClick={() => {
                   document
                     .getElementById("contacto")
                     ?.scrollIntoView({ behavior: "smooth", block: "center" });
-                }}
-                className=" text-lg border-black  hover:border-white hover:bg-primary hover:text-white w-[80%] absolute bottom-0"
-              >
+                  }}
+                  className=" text-lg border-black  hover:border-white hover:bg-primary hover:text-white w-[90%]"
+                  >
                 Quiero este servicio <ArrowRightIcon className="w-4 h-8 ml-2" />
               </Button>
             </div>
+                </div>
           </div>
-        </CardHeader>
 
         <div className="mockup-window border border-base-300">
-          <img src={props.imagePath} alt="Imagen del servicio" />
+          <div className="flex justify-center items-center h-full">
+
+          <img src={props.imagePath} alt="Imagen del servicio" className=" object-fill" />
+          </div>
         </div>
       </div>
     </motion.li>

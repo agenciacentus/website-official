@@ -8,7 +8,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 export default function Hero() {
   return (
     <section>
-      <div className="flex flex-col items-center justify-center space-y-8">
+      <div className="flex flex-col items-center justify-center md:space-y-8 space-y-4 px-4 md:p-0">
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -18,7 +18,7 @@ export default function Hero() {
             bounce: 0.2,
             duration: 0.5,
           }}
-          className="max-w-[1000px] text-[60px] text-black font-medium leading-[4rem] text-center mt-[70px]"
+          className="max-w-[1000px] md:text-[60px] text-[40px] text-black font-medium md:leading-[4rem] leading-[2.5rem] text-center mt-[70px]"
         >
           <h1>
             Haz tu proyecto realidad, con la mejor{" "}
@@ -39,7 +39,7 @@ export default function Hero() {
           }}
           className="max-w-[800px]"
         >
-          <p className="font-medium text-[#464545] text-[18px] text-center leading-6">
+          <p className="font-medium text-[#464545] md:text-[18px] text-normal text-center leading-6">
             No solo creamos software, damos vida a visiones. Somos más que una
             empresa de desarrollo de software; somos arquitectos de soluciones
             digitales que impulsan el éxito de nuestros clientes. ¿Tienes una
@@ -58,7 +58,7 @@ export default function Hero() {
             delay: 0.2,
             duration: 0.5,
           }}
-          className="flex flex-col justify-center items-center space-y-2 mb-5"
+          className="flex flex-col justify-center items-center space-y-2 mb-5 mt-4 md:mt-0"
         >
           <Button
             variant="outline"

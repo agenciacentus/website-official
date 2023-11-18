@@ -3,8 +3,8 @@ import Logo from "../public/logo.svg";
 
 export function Footer() {
   return (
-    <footer className="w-full border-t border-gray-300 mt-10">
-      <div className="footer w-full flex justify-between p-10 text-base-content max-w-[1800px] mx-auto">
+    <footer className="w-full border-t border-gray-300 mt-[5rem]">
+      <div className="footer w-full flex md:flex-row flex-col justify-between p-10 text-base-content max-w-[1800px] mx-auto">
         <aside>
           <Image
             src={Logo}
@@ -76,17 +76,9 @@ export function Footer() {
             </a>
           </nav>
           <nav className="flex flex-col">
-            <header className="footer-title">Company</header>
-            <a className="link link-hover">About us</a>
-            <a className="link link-hover">Contact</a>
-            <a className="link link-hover">Jobs</a>
-            <a className="link link-hover">Press kit</a>
-          </nav>
-          <nav className="flex flex-col">
-            <header className="footer-title">Legal</header>
-            <a className="link link-hover">Terms of use</a>
-            <a className="link link-hover">Privacy policy</a>
-            <a className="link link-hover">Cookie policy</a>
+            <header className="footer-title">Contacto</header>
+            <a className="link link-hover">soporte@acentus.agency</a>
+            <a className="link link-hover">+54 341 3107794</a>
           </nav>
         </div>
       </div>
