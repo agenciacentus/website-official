@@ -1,7 +1,7 @@
 "use client";
 import AsideNavbar from "@/components/AsideNavbar";
 import Bento from "@/components/Bento";
-import { Contacto } from "@/components/Contact";
+import { Contacto } from "@/components/contact/Contact";
 import { Footer } from "@/components/Footer";
 import Hero from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";

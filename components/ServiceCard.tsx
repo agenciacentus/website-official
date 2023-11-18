@@ -22,7 +22,7 @@ export function ServiceCard(props: ServiceCard) {
       <div className="card max-w-[1000px] bg-base-100 grid md:grid-cols-2 gap-4 flex-row shadow-xl p-8 relative ">
         <div className="flex flex-col justify-between gap-4">
 
-          <h3 className="text-2xl font-semibold">{props.title}</h3>
+          <h2 className="text-2xl font-semibold">{props.title}</h2>
           <p className="text-normal">{props.description}</p>
 
           <div className="mt-4">
