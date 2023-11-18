@@ -39,9 +39,9 @@ export default function Services() {
         }}
         className="max-w-[700px] text-[35px] text-black font-medium leading-10 text-center mt-[70px]"
       >
-        <h2 className="mb-10 md:ml-4 text-black text-4xl">
+        <h3 className="mb-10 md:ml-4 text-black text-4xl">
           ¿Que <span className="text-primary">servicios</span> ofrecemos?
-        </h2>
+        </h3>
       </motion.div>
       <div>
         <ul className="flex flex-col gap-8 items-center justify-center">

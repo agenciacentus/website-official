@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export default function Hero() {
   return (
@@ -20,11 +20,11 @@ export default function Hero() {
           }}
           className="max-w-[1000px] md:text-[60px] text-[40px] text-black font-medium md:leading-[4rem] leading-[2.5rem] text-center md:mt-[70px]"
         >
-          <h1>
+          <p>
             Haz tu proyecto realidad, con la mejor{" "}
             <span className="text-primary">tecnología</span> y los mejores{" "}
             <span className="text-primary">profesionales</span>.
-          </h1>
+          </p>
         </motion.div>
 
         <motion.div
@@ -39,13 +39,14 @@ export default function Hero() {
           }}
           className="max-w-[800px]"
         >
-          <p className="font-medium text-[#464545] md:text-[18px] text-normal text-center leading-6">
+          <div className="font-medium text-[#464545] md:text-[18px] text-normal text-center leading-6">
             No solo creamos software, damos vida a visiones. Somos más que una
-            empresa de desarrollo de software; somos arquitectos de soluciones
-            digitales que impulsan el éxito de nuestros clientes. ¿Tienes una
-            idea innovadora? Nosotros la convertimos en una realidad
+            <h1>empresa de desarrollo de software;</h1> somos arquitectos de{" "}
+            <h2>soluciones digitales</h2> que impulsan el éxito de nuestros
+            clientes. ¿Tienes una
+            <h2>idea innovadora</h2>? Nosotros la convertimos en una realidad
             tecnológica.
-          </p>
+          </div>
         </motion.div>
 
         <motion.div
@@ -94,9 +95,9 @@ export default function Hero() {
           </p>
           <p className="text-[#817e7e] text-[15px]">Luis, Pumpink Inc.</p>
           <Avatar className="mt-2">
-              <AvatarImage src="https://pbs.twimg.com/profile_images/1451323399830220808/oa3J89Ck_400x400.jpg" />
-              <AvatarFallback>JK</AvatarFallback>
-            </Avatar>
+            <AvatarImage src="https://pbs.twimg.com/profile_images/1451323399830220808/oa3J89Ck_400x400.jpg" />
+            <AvatarFallback>JK</AvatarFallback>
+          </Avatar>
         </motion.div>
       </div>
     </section>

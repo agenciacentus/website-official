@@ -23,9 +23,9 @@ export default function Bento() {
         }}
         className="max-w-[700px] text-[35px] text-black font-medium leading-10 text-center mt-[70px]"
       >
-        <h2 className="mb-10 md:ml-4 text-black text-4xl">
+        <h3 className="mb-10 md:ml-4 text-black text-4xl">
           ¿Cómo <span className="text-primary">trabajamos</span> nosotros?
-        </h2>
+        </h3>
       </motion.div>
 
       <div className="md:grid md:grid-cols-3 flex flex-col gap-8 p-4 md:p-0">
@@ -54,9 +54,9 @@ export default function Bento() {
             ></Image>
 
             <div className="space-y-2">
-              <h1 className="text-center text-[17px] text-black font-medium">
+              <h3 className="text-center text-[17px] text-black font-medium">
                 Plazos de entrega rápidos
-              </h1>
+              </h3>
               <p className="text-center text-[16px] text-[#464545] font-medium max-w-[250px]">
                 Recibe tu proyecto en el tiempo establecido. Por cada día de
                 retraso, te descontamos el 10% del valor total.
@@ -85,9 +85,9 @@ export default function Bento() {
             ></Image>
 
             <div className="space-y-2">
-              <h1 className="text-center text-[17px] text-black font-medium">
+              <h3 className="text-center text-[17px] text-black font-medium">
                 Revisiones ilimitadas
-              </h1>
+              </h3>
               <p className="text-center text-[16px] text-[#464545] font-medium max-w-[250px]">
                 No te preocupes por el número de revisiones, te ofrecemos
                 revisiones ilimitadas hasta que estés satisfecho.
@@ -115,9 +115,9 @@ export default function Bento() {
             ></Image>
 
             <div className="space-y-2">
-              <h1 className="text-center text-[17px] text-black font-medium">
+              <h3 className="text-center text-[17px] text-black font-medium">
                 Cancela en cualquier momento
-              </h1>
+              </h3>
               <p className="text-center text-[16px] text-[#464545] font-medium max-w-[250px]">
                 Si no estás satisfecho con el progreso del proyecto, puedes
                 cancelar y te devolvemos el 30% de tu dinero.
@@ -145,9 +145,9 @@ export default function Bento() {
             ></Image>
 
             <div className="space-y-2">
-              <h1 className="text-center text-[17px] text-black font-medium">
+              <h3 className="text-center text-[17px] text-black font-medium">
                 Profesionales dedicados
-              </h1>
+              </h3>
               <p className="text-center text-[16px] text-[#464545] font-medium max-w-[250px]">
                 Nuestros diseñadores y desarrolladores son profesionales con más
                 de 5 años de experiencia en el mercado.
@@ -175,9 +175,9 @@ export default function Bento() {
             ></Image>
 
             <div className="space-y-2">
-              <h1 className="text-center text-[17px] text-black font-medium">
+              <h3 className="text-center text-[17px] text-black font-medium">
                 Comunicación asincronica
-              </h1>
+              </h3>
               <p className="text-center text-[16px] text-[#464545] font-medium max-w-[250px]">
                 Comunícate con nosotros en cualquier momento del día, estamos
                 disponibles para ti. Mediante correo electrónico, WhatsApp o
@@ -206,9 +206,9 @@ export default function Bento() {
               className="py-5"
             ></Image>
             <div className="space-y-2">
-              <h1 className="text-center text-[17px] text-black font-medium">
+              <h3 className="text-center text-[17px] text-black font-medium">
                 Invita a tu equipo
-              </h1>
+              </h3>
               <p className="text-center text-[16px] text-[#464545] font-medium max-w-[250px]">
                 Invita a tu equipo a la plataforma para que puedan ver el
                 progreso del proyecto en tiempo real.
