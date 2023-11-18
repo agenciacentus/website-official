@@ -10,15 +10,15 @@ export default function Hero() {
     <section>
       <div className="flex flex-col items-center justify-center md:space-y-8 space-y-4 px-4 md:p-0">
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: 1 }}
+          whileInView={{ opacity: 1, x: 1 }}
           transition={{
             stiffness: 1000,
             type: "tween",
             bounce: 0.2,
             duration: 0.5,
           }}
-          className="max-w-[1000px] md:text-[60px] text-[40px] text-black font-medium md:leading-[4rem] leading-[2.5rem] text-center mt-[70px]"
+          className="max-w-[1000px] md:text-[60px] text-[40px] text-black font-medium md:leading-[4rem] leading-[2.5rem] text-center md:mt-[70px]"
         >
           <h1>
             Haz tu proyecto realidad, con la mejor{" "}
@@ -28,7 +28,7 @@ export default function Hero() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 100 }}
+          initial={{ opacity: 0, y: 1 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             stiffness: 1000,
@@ -49,7 +49,7 @@ export default function Hero() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 100 }}
+          initial={{ opacity: 0, y: 1 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             stiffness: 1000,
@@ -78,7 +78,7 @@ export default function Hero() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 100 }}
+          initial={{ opacity: 0, y: 1 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             stiffness: 1000,

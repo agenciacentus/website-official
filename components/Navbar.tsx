@@ -10,7 +10,7 @@ export function Navbar() {
     <nav className="md:fixed block w-full">
       <motion.div
         className="p-8 flex justify-between md:mx-auto max-w-[1800px] items-center"
-        initial={{ opacity: 0, y: 100 }}
+        initial={{ opacity: 0, y: 1 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
           stiffness: 1000,

@@ -7,8 +7,8 @@ export function Contacto() {
   return (
     <section className=" flex flex-col items-center">
       <motion.div
-        initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: 1 }}
+        whileInView={{ opacity: 1, x: 1 }}
         transition={{
           stiffness: 1000,
           type: "tween",
@@ -24,7 +24,7 @@ export function Contacto() {
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, y: 100 }}
+        initial={{ opacity: 0, y: 1 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
           stiffness: 1000,

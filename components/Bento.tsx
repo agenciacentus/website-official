@@ -13,8 +13,8 @@ export default function Bento() {
   return (
     <section className="flex flex-col items-center">
       <motion.div
-        initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: 1 }}
+        whileInView={{ opacity: 1, x: 1 }}
         transition={{
           stiffness: 1000,
           type: "tween",
@@ -35,7 +35,7 @@ export default function Bento() {
 
         <ul className="md:grid md:col-span-2 md:grid-cols-2 flex flex-col gap-8 items-center justify-center md:space-x-10">
           <motion.li
-            initial={{ opacity: 0, y: 100 }}
+            initial={{ opacity: 0, y: 1 }}
             transition={{
               duration: 0.5,
               stiffness: 1000,
@@ -66,7 +66,7 @@ export default function Bento() {
 
           {/* Revision */}
           <motion.li
-            initial={{ opacity: 0, y: 100 }}
+            initial={{ opacity: 0, y: 1 }}
             transition={{
               duration: 0.5,
               stiffness: 1000,
@@ -96,7 +96,7 @@ export default function Bento() {
           </motion.li>
 
           <motion.li
-            initial={{ opacity: 0, y: 100 }}
+            initial={{ opacity: 0, y: 1 }}
             transition={{
               duration: 0.5,
               stiffness: 1000,
@@ -126,7 +126,7 @@ export default function Bento() {
           </motion.li>
 
           <motion.li
-            initial={{ opacity: 0, y: 100 }}
+            initial={{ opacity: 0, y: 1 }}
             transition={{
               duration: 0.5,
               stiffness: 1000,
@@ -156,7 +156,7 @@ export default function Bento() {
           </motion.li>
 
           <motion.li
-            initial={{ opacity: 0, y: 100 }}
+            initial={{ opacity: 0, y: 1 }}
             transition={{
               duration: 0.5,
               stiffness: 1000,
@@ -187,7 +187,7 @@ export default function Bento() {
           </motion.li>
 
           <motion.li
-            initial={{ opacity: 0, y: 100 }}
+            initial={{ opacity: 0, y: 1 }}
             transition={{
               duration: 0.5,
               stiffness: 1000,
