@@ -21,7 +21,7 @@ export default function Home() {
   }, [scrollYProgress]); //make sure to re-subscriobe when scrollYProgress changes
 
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col overflow-x-hidden">
       <Navbar />
       {/*<AsideNavbar actualY={hookedYPostion} />*/}
       <div className="flex flex-col lg:w-screen max-w-[1000px] mx-auto">
