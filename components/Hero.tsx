@@ -90,7 +90,7 @@ export default function Hero() {
           className="font-medium flex flex-col items-center"
         >
           <p className="text-black text-[17px]">
-            "There is no words to describe this."
+            There is no words to describe this.
           </p>
           <p className="text-[#817e7e] text-[15px]">Luis, Pumpink Inc.</p>
           <Avatar className="mt-2">
