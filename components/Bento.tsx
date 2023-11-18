@@ -23,17 +23,17 @@ export default function Bento() {
         }}
         className="max-w-[700px] text-[35px] text-black font-medium leading-10 text-center mt-[70px]"
       >
-        <h2 className="mb-10 ml-4 text-black text-4xl">
+        <h2 className="mb-10 md:ml-4 text-black text-4xl">
           ¿Cómo <span className="text-primary">trabajamos</span> nosotros?
         </h2>
       </motion.div>
 
-      <div className="grid grid-cols-3 gap-8">
-        <div className="col-span-1">
+      <div className="md:grid md:grid-cols-3 flex flex-col gap-8 p-4 md:p-0">
+        <div className="md:col-span-1">
           <TimeLine />
         </div>
 
-        <ul className="col-span-2 grid grid-cols-2 gap-8 items-center justify-center space-x-10">
+        <ul className="md:grid md:col-span-2 md:grid-cols-2 flex flex-col gap-8 items-center justify-center md:space-x-10">
           <motion.li
             initial={{ opacity: 0, y: 100 }}
             transition={{
@@ -43,7 +43,7 @@ export default function Bento() {
               bounce: 0.5,
             }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="flex flex-col items-center relative left-4"
+            className="flex flex-col items-center md:relative left-4"
           >
             <Image
               src={Request}

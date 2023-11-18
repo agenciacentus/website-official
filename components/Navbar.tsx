@@ -7,9 +7,9 @@ import { motion } from "framer-motion";
 
 export function Navbar() {
   return (
-    <nav className="fixed w-full">
+    <nav className="md:fixed block w-full">
       <motion.div
-        className="p-8 flex justify-between mx-auto max-w-[1800px]"
+        className="p-8 flex justify-between md:mx-auto max-w-[1800px] items-center"
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
@@ -23,7 +23,7 @@ export function Navbar() {
         <Image
           src={Logo}
           alt="Acentus Logo"
-          className="w-[150px] h-[28px]"
+          className="md:w-[150px] md:h-[28px] h-[18px] w-[100px]"
         ></Image>
 
         <Button
@@ -33,7 +33,7 @@ export function Navbar() {
               .getElementById("contacto")
               ?.scrollIntoView({ behavior: "smooth", block: "center" });
           }}
-          className=" text-lg border-black hover:border-white hover:bg-primary hover:text-white"
+          className=" md:text-lg text-normal border-black hover:border-white hover:bg-primary hover:text-white"
         >
           Comienza ahora <ArrowRightIcon className="w-4 h-8 ml-2" />
         </Button>

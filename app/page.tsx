@@ -24,10 +24,10 @@ export default function Home() {
     <main className="flex flex-col">
       <Navbar />
       {/*<AsideNavbar actualY={hookedYPostion} />*/}
-      <div className="flex flex-col w-screen max-w-[1000px] mx-auto">
+      <div className="flex flex-col lg:w-screen max-w-[1000px] mx-auto">
         <div
           id="inicio"
-          className="h-screen w-full flex justify-center items-center"
+          className="h-screen w-full flex md:justify-center justify-start items-center"
         >
           <Hero />
         </div>
@@ -40,7 +40,7 @@ export default function Home() {
           <Bento />
         </div>
 
-        <div id="contacto" className="h-screen w-full flex justify-center items-center">
+        <div id="contacto" className="w-full mt-[4rem] flex justify-center items-center">
           <Contacto />
         </div>
       </div>
