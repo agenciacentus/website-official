@@ -2,7 +2,6 @@ import { ArrowRightIcon } from "lucide-react";
 import { Button } from "../ui/button";
 import { useState } from "react";
 import { validateEmail } from "@/lib/utils";
-import { sendEmail } from "@/lib/resend";
 import { motion } from "framer-motion";
 
 export function ConsultationFormContact() {
@@ -12,7 +11,7 @@ export function ConsultationFormContact() {
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     setLoading(true);
 
     if (email === "" || message === "") {
@@ -42,19 +41,30 @@ export function ConsultationFormContact() {
     setEmail("");
     setMessage("");
 
-    sendEmail({ email: email, description: message }).then((success) => {
-      if (success) {
-        setSuccess(true);
-      } else {
-        setError("Ocurrió un error al enviar su consulta.");
+    const sendMail = await fetch(
+      "/api/resend?email=" + email + "&description=" + message,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
       }
-    });
+    );
 
+    const response = await sendMail.json();
+
+    if (response.success) {
+      setSuccess(true);
+    } else {
+      setError("Ocurrió un error al enviar su consulta.");
+    }
+
+    document.getElementById("modalSuccess")?.showModal();
     setLoading(false);
   };
 
   return (
-    <div className="card max-w-[1000px] col-span-1 bg-base-100 shadow-xl p-8 flex justify-between ">
+    <div className="card max-w-[1000px] col-span-1 bg-base-100 shadow-xl p-8 flex justify-between gap-4 ">
       <div>
         <h3 className="text-xl font-semibold">Contacto</h3>
         <p className="text-normal">¿Tienes alguna duda? ¡Escríbenos!</p>
@@ -91,8 +101,8 @@ export function ConsultationFormContact() {
 
         {error ? (
           <motion.span
-            initial={{ opacity: 0, x: 1 }}
-            whileInView={{ opacity: 1, x: 1 }}
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 100 }}
             transition={{
               stiffness: 1000,
               type: "keyframes",
@@ -100,7 +110,7 @@ export function ConsultationFormContact() {
               duration: 0.5,
             }}
             key={error}
-            className="mt-2 text-red-500"
+            className="mt-4 text-red-500"
           >
             - {error}
           </motion.span>
@@ -114,8 +124,30 @@ export function ConsultationFormContact() {
           onClick={() => handleSubmit()}
           className=" text-lg border-black  hover:border-white hover:bg-primary hover:text-white w-[80%] "
         >
-          Enviar consulta <ArrowRightIcon className="w-4 h-8 ml-2" />
+          Enviar consulta {loading ? <span className="loading loading-spinner loading-xs ml-2"></span> : <ArrowRightIcon className="w-4 h-8 ml-2" />}
         </Button>
+
+        <dialog id="modalSuccess" className="modal">
+          <div className="modal-box">
+            <h3 className="font-bold text-lg">
+              ¡Tu consulta fue enviada correctamente!
+            </h3>
+            <p className="py-2">
+              Recibirás una respuesta durante el siguiente día hábil. ¡Muchas
+              gracias!
+            </p>
+            <div className="modal-action">
+              <form method="dialog">
+                <button
+                  className="btn"
+                  onClick={() => window.location.reload()}
+                >
+                  Cerrar
+                </button>
+              </form>
+            </div>
+          </div>
+        </dialog>
       </div>
     </div>
   );
