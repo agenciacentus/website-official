@@ -29,8 +29,8 @@ export default function Services() {
   return (
     <section className="flex flex-col items-center">
       <motion.div
-        initial={{ opacity: 0, x: 1 }}
-        whileInView={{ opacity: 1, x: 1 }}
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{
           stiffness: 1000,
           type: "tween",

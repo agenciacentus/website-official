@@ -10,8 +10,8 @@ export default function Hero() {
     <section>
       <div className="flex flex-col items-center justify-center md:space-y-8 space-y-4 px-4 md:p-0">
         <motion.div
-          initial={{ opacity: 0, x: 1 }}
-          whileInView={{ opacity: 1, x: 1 }}
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{
             stiffness: 1000,
             type: "tween",
@@ -28,7 +28,7 @@ export default function Hero() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 1 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             stiffness: 1000,
@@ -40,17 +40,19 @@ export default function Hero() {
           className="max-w-[800px]"
         >
           <div className="font-medium text-[#464545] md:text-[18px] text-normal text-center leading-6">
-            No solo creamos software, damos vida a visiones. Somos más que una
-            <h1>empresa de desarrollo de software;</h1> somos arquitectos de{" "}
-            <h2>soluciones digitales</h2> que impulsan el éxito de nuestros
-            clientes. ¿Tienes una
-            <h2>idea innovadora</h2>? Nosotros la convertimos en una realidad
-            tecnológica.
+            <h1>
+              No solo creamos software, damos vida a visiones. Somos más que una
+              empresa de desarrollo de software; somos arquitectos de soluciones.
+              digitales
+            </h1>{" "}
+            <h2>
+              ¿Tienes una idea innovadora? Nosotros la convertimos en una realidad tecnológica.
+            </h2>
           </div>
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 1 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             stiffness: 1000,
@@ -79,7 +81,7 @@ export default function Hero() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 1 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             stiffness: 1000,

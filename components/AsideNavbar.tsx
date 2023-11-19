@@ -23,15 +23,15 @@ export default function AsideNavbar({ actualY }: { actualY: number }) {
               return (
                 <motion.li
                   className="text-xl whitespace-nowrap p-1 cursor-pointer transition-all"
-                  initial={{ opacity: 0, x: 1 }}
+                  initial={{ opacity: 0, x: 100 }}
                   transition={{
                     duration: 0.5,
                     stiffness: 1000,
                     type: "tween",
                     bounce: 0.5,
                   }}
-                  animate={{ opacity: 1, x: 1 }}
-                  exit={{ opacity: 0, x: 1 }}
+                  animate={{ opacity: 1, x: 100 }}
+                  exit={{ opacity: 0, x: 100 }}
                   key={item.path}
                   onClick={() => {
                     console.log(item.path);
