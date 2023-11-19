@@ -82,8 +82,10 @@ export function PriceFormContact() {
       setError("Ocurrió un error al enviar su consulta.");
     }
 
-    document.getElementById("modalSuccess")?.showModal();
+    const element = document.getElementById("modalSuccess") as HTMLDialogElement;
+    element.showModal();
     setLoading(false);
+
   };
 
   return (

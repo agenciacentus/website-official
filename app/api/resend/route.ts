@@ -18,7 +18,7 @@ export async function POST(request: Request) {
       "Mensaje de CONSULTA - " +
       email +
       (type ? " - " + type : "") +
-      (usd ? " - " + usd : "USD"),
+      (usd ? " - " + usd + "USD" : ""),
     text: description!,
   })
   
